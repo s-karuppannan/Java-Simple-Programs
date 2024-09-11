@@ -4,14 +4,11 @@ public class LeapYearChecker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input year from user
         System.out.print("Enter a year: ");
         int year = scanner.nextInt();
-
-        // Check if the year is a leap year
+        
         boolean isLeapYear = checkLeapYear(year);
 
-        // Output the result
         if (isLeapYear) {
             System.out.println(year + " is a leap year.");
         } else {
@@ -21,19 +18,18 @@ public class LeapYearChecker {
         scanner.close();
     }
 
-    // Method to check if a year is a leap year
     public static boolean checkLeapYear(int year) {
         if (year % 4 == 0) {
             if (year % 100 == 0) {
-                // Year is divisible by 100, check if it's divisible by 400
+            
                 return year % 400 == 0;
             } else {
-                // Year is divisible by 4 but not by 100
+             
                 return true;
             }
         } else {
-            // Year is not divisible by 4
+          
             return false;
         }
     }
-}￼Enter
+}
