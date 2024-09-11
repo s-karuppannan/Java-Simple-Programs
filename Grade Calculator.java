@@ -4,15 +4,12 @@ public class StudentGradeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input the number of subjects
         System.out.print("Enter the number of subjects: ");
         int numberOfSubjects = scanner.nextInt();
 
-        // Initialize arrays to store marks and calculate total
         double[] marks = new double[numberOfSubjects];
         double total = 0;
 
-        // Input marks for each subject
         System.out.println("Enter marks for each subject:");
         for (int i = 0; i < numberOfSubjects; i++) {
             System.out.print("Subject " + (i + 1) + ": ");
@@ -20,21 +17,16 @@ public class StudentGradeCalculator {
             total += marks[i];
         }
 
-        // Calculate average
         double average = total / numberOfSubjects;
 
-        // Determine grade
         char grade = calculateGrade(average);
 
-        // Output results
         System.out.println("Total Marks: " + total);
         System.out.println("Average Marks: " + average);
         System.out.println("Grade: " + grade);
 
         scanner.close();
     }
-
-    // Method to determine grade based on average marks
     public static char calculateGrade(double average) {
         if (average >= 90) {
             return 'A';
@@ -48,4 +40,4 @@ public class StudentGradeCalculator {
             return 'F';
         }
     }
-}￼Enter
+}
