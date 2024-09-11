@@ -4,17 +4,13 @@ public class PalindromeChecker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input string from user
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
-        // Remove spaces and convert to lowercase for case-insensitive comparison
         String cleanedInput = input.replaceAll("\\s+", "").toLowerCase();
 
-        // Check if the cleaned string is a palindrome
         boolean isPalindrome = isPalindrome(cleanedInput);
 
-        // Output the result
         if (isPalindrome) {
             System.out.println("The string \"" + input + "\" is a palindrome.");
         } else {
@@ -24,7 +20,6 @@ public class PalindromeChecker {
         scanner.close();
     }
 
-    // Method to check if a string is a palindrome
     public static boolean isPalindrome(String str) {
         int left = 0;
         int right = str.length() - 1;
@@ -38,4 +33,4 @@ public class PalindromeChecker {
         }
         return true;
     }
-}￼Enter
+}
