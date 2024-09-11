@@ -39,4 +39,4 @@ public class BinaryToDecimalConverter {
 
         return decimal;
     }
-}￼Enter
+}
