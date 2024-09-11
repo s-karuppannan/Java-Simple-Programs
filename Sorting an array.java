@@ -5,24 +5,19 @@ public class ArraySorter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input the size of the array
         System.out.print("Enter the number of elements in the array: ");
         int size = scanner.nextInt();
 
-        // Initialize the array
         int[] array = new int[size];
 
-        // Input array elements
         System.out.println("Enter " + size + " integers:");
         for (int i = 0; i < size; i++) {
             System.out.print("Element [" + i + "]: ");
             array[i] = scanner.nextInt();
         }
 
-        // Sort the array
         Arrays.sort(array);
 
-        // Output the sorted array
         System.out.println("Sorted array:");
         for (int num : array) {
             System.out.print(num + " ");
@@ -31,4 +26,4 @@ public class ArraySorter {
 
         scanner.close();
     }
-}￼Enter
+}
