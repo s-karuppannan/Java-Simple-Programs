@@ -4,11 +4,9 @@ public class BinaryToDecimalConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input binary number from user
         System.out.print("Enter a binary number: ");
         String binaryString = scanner.nextLine();
-
-        // Convert binary to decimal
+l
         try {
             int decimal = binaryToDecimal(binaryString);
             System.out.println("The decimal equivalent of binary " + binaryString + " is: " + decimal);
@@ -19,14 +17,14 @@ public class BinaryToDecimalConverter {
         scanner.close();
     }
 
-    // Method to convert binary string to decimal
+
     public static int binaryToDecimal(String binary) {
-        // Validate the binary string
+  
         if (!binary.matches("[01]+")) {
             throw new NumberFormatException("Not a valid binary number.");
         }
 
-        // Convert binary to decimal
+
         int decimal = 0;
         int length = binary.length();
         
