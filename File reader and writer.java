@@ -6,14 +6,14 @@ import java.io.OutputStream;
 
 public class FileReaderWriter {
     public static void main(String[] args) {
-        // File paths for input and output files
-        String inputFilePath = "input.txt"; // Change to your input file path
-        String outputFilePath = "output.txt"; // Change to your output file path
+        
+        String inputFilePath = "input.txt";
+        String outputFilePath = "output.txt"; 
 
         try (InputStream inputStream = new FileInputStream(inputFilePath);
              OutputStream outputStream = new FileOutputStream(outputFilePath)) {
 
-            // Read content from the input file and write it to the output file
+    
             byte[] buffer = new byte[1024];
             int bytesRead;
 
@@ -27,4 +27,4 @@ public class FileReaderWriter {
             e.printStackTrace();
         }
     }
-}￼Enter
+}
