@@ -53,4 +53,4 @@ public class SimpleCalculator {
 
         scanner.close();
     }
-}￼Enter
+}
